@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+<a href="index.html">Home</a>
+</div>
+
+<div class="container">
+<h1>Registration</h1>
+
+<form id="registerForm">
+<input type="text" id="name" placeholder="Name" required>
+<input type="email" id="email" placeholder="Email" required>
+
+<select id="department" required>
+<option value="">Select Department</option>
+<option>Computer Science</option>
+<option>Commerce</option>
+<option>Management</option>
+</select>
+
+<button type="submit">Register</button>
+</form>
+</div>
+
+<script>
+document.getElementById("registerForm").addEventListener("submit", function(e){
+e.preventDefault();
+
+let user = {
+name: name.value,
+email: email.value,
+department: department.value
+};
+
+localStorage.setItem("user", JSON.stringify(user));
+alert("Registered Successfully!");
+});
+</script>
+
+</body>
+</html>
