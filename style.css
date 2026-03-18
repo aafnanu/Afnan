@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0,0,0,0.7);
+    padding: 12px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00f2fe;
+}
+
+/* Container */
+.container {
+    width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    animation: fadeIn 1s ease;
+}
+
+/* Inputs */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: #ff7eb3;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #ff4e8a;
+}
+
+/* Feedback */
+.feedback-item {
+    background: rgba(255,255,255,0.3);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1;}
+}
